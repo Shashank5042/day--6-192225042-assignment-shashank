@@ -1,0 +1,60 @@
+
+Product
+Solutions
+Open Source
+Pricing
+Search
+Sign in
+Sign up
+mydhili2005
+/
+192211592--mydhili--assignment-day6
+Public
+Code
+Issues
+Pull requests
+Actions
+Projects
+Security
+Insights
+192211592--mydhili--assignment-day6/Question 4
+@mydhili2005
+mydhili2005 Create Question 4
+Latest commit f37093d 6 hours ago
+ History
+ 1 contributor
+33 lines (24 sloc)  442 Bytes
+ 
+
+#include <stdio.h>
+int main()
+{
+  int n, c, k;
+
+  printf("Enter number of rows\n");
+  scanf("%d", &n);
+
+  for (k = 1; k <= n; k++)
+  {
+    for (c = 1; c <= n-k; c++)
+      printf(" ");
+
+    for (c = 1; c <= 2*k-1; c++)
+      printf("*");
+
+    printf("\n");
+  }
+
+  for (k = 1; k <= n - 1; k++)
+  {
+    for (c = 1; c <= k; c++)
+      printf(" ");
+
+    for (c = 1 ; c <= 2*(n-k)-1; c++)
+      printf("*");
+
+    printf("\n");
+  }
+
+  return 0;
+}
